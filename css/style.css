@@ -24,6 +24,12 @@ nav .logo {
     -webkit-background-clip: text;
     color: transparent;
 }
+.logo {
+    
+    background: linear-gradient(45deg, #00e1ff, #06ff61);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 nav ul {
     display: flex;
@@ -62,3 +68,45 @@ nav .menu-btn i {
 input[type="checkbox"] {
     display: none;
 }
+
+
+
+
+/* Image slider*/
+.slider-container {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+    /* Add a class to hide the buttons if needed */
+    .hidden {
+        display: none;
+      }

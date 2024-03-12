@@ -2,119 +2,104 @@
 <html lang="en" data-theme="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive NavMenu</title>
-    <!-- Tailwind & DiasyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- CSS Styles Sheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive NavMenu</title>
+  <!-- Tailwind & DiasyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS Styles Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
-    <div class="header-container">
-        <header class="relative container mx-auto">
-            <!-- Navbar -->
-            <nav class="absolute z-10 lg:my-5 lg:rounded-full shadow-2xl  ">
-                <div class="logo lg:text-2xl font-extrabold  hover:animate-bounce lg:p-3   cursor-pointer">
-                    <i class="fa-solid fa-network-wired animate-bounce logo"></i>
-                    Rumon <span class="">Network</span>
-                </div>
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <ul class="lg:flex items-center">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Feedback</a></li>
+  <div class="header-container">
+    <header class="relative container mx-auto">
+      <!-- Navbar -->
+      <nav class="absolute z-10 lg:my-5 lg:rounded-full shadow-2xl  ">
+        <div class="logo lg:text-2xl font-extrabold  hover:animate-bounce lg:p-3   cursor-pointer">
+          <i class="fa-solid fa-network-wired animate-bounce logo"></i>
+          Rumon <span class="">Network</span>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="lg:flex items-center">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#main">Services</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact</a></li>
 
-                    <button class="btn btn-primary  text-white">
-                        <i class="fa-solid fa-wifi "></i> Customer Portal
-                    </button>
+          <button class="border p-3 rounded-lg hover:bg-blue-700  text-white">
+            <i class="fa-solid fa-wifi "></i> Customer Portal
+          </button>
 
-                </ul>
-            </nav>
+        </ul>
+      </nav>
 
 
 
-            <!-- Hero Banner -->
-            <div class="hero min-h-screen ">
-                <div class="hero min-h-screen ">
-                    <div class="hero-content flex-col lg:flex-row">
-                      <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-                      <div>
-                        <h1 class="text-5xl font-bold">Box Office News!</h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Get Started</button>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Hero Banner -->
+      <div class="hero h-[100vh;] lg:h-[80vh;] flex justify-center text-center lg:text-start">
+        <div class="hero min-h-screen ">
+          <div class="hero-content flex-col lg:flex-row">
+            <div class="">
+              <h1 class=" text-2xl lg:text-5xl font-bold logo ">ICC Communication Ltd.</h1>
+              <h1 class="text-xl font-bold">Rumon Network (A Resaller)</h1>
+              <p class="py-4">ICC Communication is a Nationwide Internet Service Provider having license from Bangladesh
+                Telecommunications Regulatory Commission (BTRC). This organization is an integral part of ICC Group.</p>
+              <button class="border p-2 rounded-lg hover:bg-blue-700"><i
+                  class="fa-brands fa-readme mx-2 shadow-lg"></i>Read More</button>
             </div>
-
-
-
-        </header>
-
-
-        <main class="container mx-auto flex justify-center py-10">
-            <div class="stats shadow">
-  
-                <div class="stat">
-                  <div class="stat-figure text-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                  </div>
-                  <div class="stat-title">Total Likes</div>
-                  <div class="stat-value text-primary">25.6K</div>
-                  <div class="stat-desc">21% more than last month</div>
-                </div>
-                
-                <div class="stat">
-                  <div class="stat-figure text-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                  </div>
-                  <div class="stat-title">Page Views</div>
-                  <div class="stat-value text-secondary">2.6M</div>
-                  <div class="stat-desc">21% more than last month</div>
-                </div>
-                
-                <div class="stat">
-                  <div class="stat-figure text-secondary">
-                    <div class="avatar online">
-                      <div class="w-16 rounded-full">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="stat-value">86%</div>
-                  <div class="stat-title">Tasks done</div>
-                  <div class="stat-desc text-secondary">31 tasks remaining</div>
-                </div>
-                
+            <div class="slider-container rounded-2xl w-full">
+              <div class="slider-wrapper " id="sliderWrapper">
+                <div class="slide"><img src="image/logo.png" alt="Image 1"></div>
+                <div class="slide"><img src="image/logo.png" alt="Image 2"></div>
+                <div class="slide"><img src="image/logo.png" alt="Image 3"></div>
+                <div class="slide"><img src="image/logo.png" alt="Image 4"></div>
+                <!-- Add more slides as needed -->
+               <div class="hidden">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+               </div>
               </div>
-        </main>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
-    </div>
+    </header>
 
-    <script src="JS/script.js"></script>
+    <section id="#main">
+      <main class="container mx-auto flex justify-center py-10">
+        
+        
+        
+        
+      </main>
+    </section>
+
+
+  </div>
+
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
