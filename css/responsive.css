@@ -1,6 +1,6 @@
 
-@media (max-width: 1000px){
-  nav{
+@media (max-width: 1000px) {
+  nav {
     padding: 0 40px 0 50px;
   }
 }
@@ -21,13 +21,15 @@
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+    list-style: none;
+    padding: 0;
   }
   #click:checked ~ ul{
     left: 0;
   }
   nav ul li{
     width: 100%;
-    margin: 40px 0;
+    margin: 10px 0;
   }
   nav ul li a{
     width: 100%;
