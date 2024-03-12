@@ -18,14 +18,8 @@ nav {
     flex-wrap: wrap;
 }
 
-nav .logo {
-    
-    background: linear-gradient(45deg, #00e1ff, #06ff61);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+
 .logo {
-    
     background: linear-gradient(45deg, #00e1ff, #06ff61);
     -webkit-background-clip: text;
     color: transparent;
