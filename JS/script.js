@@ -71,7 +71,7 @@ function updateSlider() {
 }
 
 function startAutoSlide() {
-  autoSlideInterval = setInterval(nextSlide, 3000); // Change the interval as needed (in milliseconds)
+  autoSlideInterval = setInterval(nextSlide, 2000); // Change the interval as needed (in milliseconds)
 }
 
 function stopAutoSlide() {
