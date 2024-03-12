@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -137,6 +137,8 @@
   </div>
 
 
+  <main class="container mx-auto">
+
   <section id="about" class="bg-white text-justify">
 
     <!-- Title -->
@@ -166,11 +168,51 @@
   </section>
 
 
+    <!-- Internet Packages Section -->
+    <section id="internet-packages" class="py-12 bg-gray5">
+      <!-- Title -->
+    <div class="container text-center py-10 mx-auto  border-b-2 border-blue-400">
+      <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">Internet <span class="logo ">Package</span></h1>
+    </div>
+      
+      <div class="  lg:h-[50vh;]">
 
-  
-  <section>
+        <!-- Cart Section -->
+        <div id="cart" class="mt-8 p-4 text-center rounded-lg">
+          <h3 class="text-xl font-semibold mb-4">Update Packages</h3>
+          <ul id="cart-items" class=""></ul>
+          <p id="total">Total: $0.00</p>
+        </div>
 
-  </section>
+        <div class="flex flex-wrap justify-center ">
+          <!-- Package 1 -->
+          <div class="package bg-white border border-gray-300 p-6 rounded-lg m-4 text-center">
+            <h2 class="text-xl font-semibold text-gray-800">Basic Plan</h2>
+            <p class="text-gray-600">Speed: 10 Mbps</p>
+            <p class="text-gray-600">Data Limit: 100 GB</p>
+            <p class="text-gray-600">Price: $29.99/month</p>
+            <button onclick="addToCart('Basic Plan', 29.99)" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">Add to Cart</button>
+          </div>
+    
+          <!-- Package 2 -->
+          <div class="package bg-white border border-gray-300 p-6 rounded-lg m-4 text-center">
+            <h2 class="text-xl font-semibold text-gray-800">Standard Plan</h2>
+            <p class="text-gray-600">Speed: 50 Mbps</p>
+            <p class="text-gray-600">Data Limit: Unlimited</p>
+            <p class="text-gray-600">Price: $49.99/month</p>
+            <button onclick="addToCart('Standard Plan', 49.99)" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">Add to Cart</button>
+          </div>
+    
+          <!-- Add more packages as needed -->
+        </div>
+    
+        
+      </div>
+      
+ </main>
+
+
+ 
 
   <script src="JS/script.js"></script>
 </body>
