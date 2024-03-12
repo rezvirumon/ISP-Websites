@@ -31,31 +31,45 @@
       <!-- Navbar -->
       <nav class="absolute z-10 lg:my-5 lg:rounded-full shadow-2xl">
         <div class="logo lg:text-2xl font-extrabold hover:animate-bounce lg:p-3 cursor-pointer">
-            <i class="fa-solid fa-network-wired animate-bounce logo"></i>
-            Rumon <span class="">Network</span>
+          <i class="fa-solid fa-network-wired animate-bounce logo"></i>
+          Rumon <span class="">Network</span>
         </div>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </label>
         <ul class="lg:flex items-center">
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#main">Services</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Contact</a></li>
-            <li>
-                <a href="#" class="border p-3 rounded-lg hover:bg-blue-700 text-white">
-                    <i class="fa-solid fa-wifi"></i> Customer Portal
-                </a>
-            </li>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#" class="border p-3 rounded-lg hover:bg-blue-700 text-white" onclick="document.getElementById('my_modal_1').showModal()">
+              <i class="fa-solid fa-wifi mr-2"></i> Customer Portal
+            </a>
+            <dialog id="my_modal_1" class="modal ">
+              <div class="modal-box">
+                <!-- Replace "portal.iccbd.com" with the URL you want to embed -->
+                <iframe src="https://portal.iccbd.com" width="100%" height="600px" frameborder="0"></iframe>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- Close the modal using the "Close" button -->
+                    <button class="" onclick="document.getElementById('my_modal_1').close()">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            
+           
+          </li>
         </ul>
-    </nav>
+      </nav>
 
 
 
       <!-- Hero Banner -->
-      <div class="hero h-[100vh;] lg:h-[80vh;] flex justify-center text-center lg:text-start">
+      <div class="hero h-[100vh;] lg:h-[80vh;] flex justify-center text-center lg:text-start border-b-2">
         <div class="hero min-h-screen ">
           <div class="hero-content flex-col lg:flex-row">
             <div class="">
@@ -82,55 +96,81 @@
           </div>
         </div>
       </div>
-      <div>
-        <ul class="menu glass bg-blue-800 lg:menu-horizontal rounded-box mx-3 text-black">
-          <li>
-            <a>
-              <i class="fa-solid fa-home"></i>
-              Coverage Area
-              <span class="badge badge-sm">10+</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              <i class="fa-solid fa-location-dot"></i>
-              Offers
-              <span class="badge badge-sm badge-warning">Available</span>
-            </a>
-          </li>
-          <li>
-            <a>
-              Stats
-              <span class="badge badge-xs badge-info"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
 
     </header>
 
-    <section id="main">
-      <main class="container mx-auto flex justify-center py-10">
-        <div class="hero min-h-screen ">
-          <div class="hero-content flex-col lg:flex-row">
-            <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-            <div>
-              <h1 class="text-5xl font-bold">Box Office News!</h1>
-              <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button class="btn btn-primary">Get Started</button>
-            </div>
-          </div>
+
+    <section id="" class="container mx-auto ">
+      <main class=" py-10">
+        <div class="">
+          <ul class="menu glass bg-blue-800 lg:menu-horizontal rounded-box mx-3 text-black">
+            <li>
+              <a>
+                <i class="fa-solid fa-home"></i>
+                Coverage Area
+                <span class="badge badge-sm">10+</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fa-solid fa-location-dot"></i>
+                Offers
+                <span class="badge badge-sm badge-warning">Available</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                Stats
+                <span class="badge badge-xs badge-info"></span>
+              </a>
+            </li>
+          </ul>
         </div>
+
+
+
 
 
 
       </main>
     </section>
-
-
   </div>
+
+
+  <section id="about" class="bg-white text-justify">
+
+    <!-- Title -->
+    <div class="container text-center py-10 mx-auto  border-b-2 border-blue-400">
+      <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">About <span class="logo ">US</span></h1>
+    </div>
+
+    <div class="container mx-auto p-3  w-full h-[60vh;]">
+      <div class="text-center">
+        <h1 class="text-2xl text-gray-500">A BROADBAND LEADER</h1>
+        <h3 class="text-lg text-gray-500">A BIG OPPERTUNITY FOR YOUR BUSINESS GROWTH</h3>
+      </div>
+
+      <div class="text-center lg:text-start text-gray-800">
+        <p>
+          ICC Communication is a Nationwide Internet Service Provider having license from Bangladesh
+          Telecommunications Regulatory Commission (BTRC). This organization is an integral part of ICC Group.
+
+          We offer broadband internet and private data communication solutions over fiber optic, wireless and
+          satellite technology through out the country. ICC with its state-of-the-art redundant backbone
+          infrastructure assures 100% uptime while providing ultimate clients satisfaction no matter how small a
+          client may be. The Network Operation Center (NOC) is staffed 24/7 basis to respond and fix any issues
+          related to connectivity.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <section>
+
+  </section>
 
   <script src="JS/script.js"></script>
 </body>
