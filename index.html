@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive NavMenu</title>
+    <!-- Tailwind & DiasyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS Styles Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
 </head>
+
 <body>
+
+    <div class="header-container">
+        <header class="relative container mx-auto">
+            <!-- Navbar -->
+            <nav class="absolute z-10 lg:my-5 lg:rounded-full shadow-2xl glass">
+                <div class="logo">Rumon <span class="text-3xl">Network</span></div>
+                <input type="checkbox" id="click">
+                <label for="click" class="menu-btn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </nav>
+              
     
+    
+            <!-- Hero Banner -->
+            <div class="hero min-h-screen ">
+                
+            </div>
+    
+    
+    
+        </header>
+    </div>
+
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
