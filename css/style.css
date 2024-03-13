@@ -11,7 +11,7 @@ nav {
     display: flex;
     height: 80px;
     width: 100%;
-    background: var(--bg-main-color);
+  
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
@@ -48,8 +48,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #0afbff;
-    box-shadow: 5px 5px 20px 0.5px rgb(6, 26, 151),
-        -10px -10px 30px 0.5px rgb(6, 23, 129);
+
 }
 
 nav .menu-btn i {
