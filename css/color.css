@@ -21,3 +21,25 @@
     background-size: 400% 400%;
     animation: bgAnimation 8s ease-in-out infinite;
   }
+
+
+  .package {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .package:hover {
+    background-color: #2b6cb0; /* Updated hover background color */
+    box-shadow: 5px 5px 20px 0.5px rgb(6, 26, 151), -10px -10px 30px 0.5px rgb(6, 23, 129);
+  }
+
+
+  .service-card:hover {
+    background-color: #f0f0f0; /* Adjust hover background color */
+    transform: scale(1.05); /* Adjust hover scale */
+  }
+
+
+  .service-card {
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
