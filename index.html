@@ -127,7 +127,7 @@
     <main class=" mx-auto">
 
       <!-- about Section -->
-      <section id="about" class="bg-white text-justify">
+      <section id="about" class="bg-white text-justify px-5">
         <!-- Title -->
         <div class="container text-center py-10 mx-auto  border-b-2 border-blue-400">
           <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">About <span class="logo ">US</span></h1>
@@ -136,11 +136,11 @@
         <div class="container mx-auto p-3  w-full  lg:h-[30vh;]">
           <div class="text-center">
             <h1 class="text-2xl text-gray-500 ">A BROADBAND LEADER</h1>
-            <h3 class="text-lg text-gray-500  py-2">A BIG OPPORTUNITY FOR YOUR BUSINESS GROWTH</h3>
+            <h3 class="text-sm text-gray-500  py-2">A BIG OPPORTUNITY FOR YOUR BUSINESS GROWTH</h3>
           </div>
 
           <div class="text-center lg:text-start text-gray-800 lg:p-3">
-            <p>
+            <p class="text-sm lg:text-xl">
               ICC Communication is a Nationwide Internet Service Provider having a license from the Bangladesh
               Telecommunications Regulatory Commission (BTRC). This organization is an integral part of the ICC Group.
 
@@ -155,7 +155,7 @@
       </section>
 
       <!-- Service Section -->
-      <section id="services" class="bg-gray-100 text-justify lg:h-[60vh;]">
+      <section id="services" class="bg-gray-100 text-justify lg:h-[60vh;] px-5">
         <!-- Title -->
         <div class="container text-center py-10 mx-auto border-b-2 border-blue-400">
           <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">Service <span class="logo">&
@@ -211,7 +211,8 @@
         </div>
       </section>
 
-      <section id="packages" class="py-12 text-white container mx-auto">
+      <!-- packages -->
+      <section id="packages" class="py-12 text-white container mx-auto px-5">
         <!-- Title -->
         <div class="container text-center py-10 mx-auto border-b-2 border-blue-400">
           <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">Internet <span
@@ -263,6 +264,62 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="bg-white py-12 px-5">
+        <!-- Title -->
+        <div class="container text-center py-10 mx-auto border-b-2 border-blue-400">
+          <h1 class="title-text text-3xl font-extrabold text-black lg:text-5xl">Contact <span class="logo">Us</span>
+          </h1>
+        </div>
+
+        <div class="lg:flex gap-10 w-full items-center py-10 container mx-auto">
+
+          <div class="container my-5 lg:h-[450px;] mx-auto animate-bg b-area p-6 rounded-lg shadow-md flex justify-center items-center">
+            <!-- Contact Details -->
+            <div class="mb-8 text-center  ">
+              <h2 class="text-2xl font-bold mb-4">Contact Details</h2>
+              <div class="text-white">
+                <p">Address: 123 Main Street, Cityville</p>
+                  <p">Phone: +1 (555) 123-4567</p>
+                    <p">Email: info@example.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="container mx-auto max-w-lg lg:h-[450px;] animate-bg b-area p-6 rounded-lg shadow-md">
+            <form action="#" method="post" class="space-y-4">
+              <div>
+                <label for="name" class="block text-white text-sm font-semibold mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full border p-3 rounded focus:outline-none focus:border-blue-500">
+              </div>
+
+              <div>
+                <label for="email" class="block text-white text-sm font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full border p-3 rounded focus:outline-none focus:border-blue-500">
+              </div>
+
+              <div>
+                <label for="message" class="block text-white text-sm font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full border p-3 rounded focus:outline-none focus:border-blue-500"></textarea>
+              </div>
+
+              <button type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">Submit</button>
+            </form>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
 
     </main>
 
