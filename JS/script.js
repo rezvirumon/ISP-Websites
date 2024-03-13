@@ -1,49 +1,49 @@
 // navbar
- document.addEventListener('DOMContentLoaded', function () {
-      const menuBtn = document.getElementById('click');
-      const menuItems = document.querySelectorAll('nav ul li a');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.getElementById('click');
+  const menuItems = document.querySelectorAll('nav ul li a');
 
-      // Function to close the menu
-      function closeMenu() {
-        menuBtn.checked = false;
-      }
+  // Function to close the menu
+  function closeMenu() {
+    menuBtn.checked = false;
+  }
 
-      // Add click event listener to each menu item
-      menuItems.forEach(item => {
-        item.addEventListener('click', function (event) {
-          event.preventDefault(); // Prevent default anchor behavior
+  // Add click event listener to each menu item
+  menuItems.forEach(item => {
+    item.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default anchor behavior
 
-          const targetId = this.getAttribute('href').substring(1); // Get target element ID
-          const targetElement = document.getElementById(targetId); // Get target element
+      const targetId = this.getAttribute('href').substring(1); // Get target element ID
+      const targetElement = document.getElementById(targetId); // Get target element
 
-          if (targetElement) {
-            const offsetTop = targetElement.offsetTop; // Calculate offset top of the target element
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth' // Use smooth scrolling behavior
-            });
-
-            closeMenu(); // Close the menu after clicking a link
-          }
+      if (targetElement) {
+        const offsetTop = targetElement.offsetTop; // Calculate offset top of the target element
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth' // Use smooth scrolling behavior
         });
-      });
+
+        closeMenu(); // Close the menu after clicking a link
+      }
     });
+  });
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.getElementById('click');
-    const menuItems = document.querySelectorAll('nav ul li a');
+  const menuBtn = document.getElementById('click');
+  const menuItems = document.querySelectorAll('nav ul li a');
 
-    // Function to close the menu
-    function closeMenu() {
-      menuBtn.checked = false;
-    }
+  // Function to close the menu
+  function closeMenu() {
+    menuBtn.checked = false;
+  }
 
-    // Add click event listener to each menu item
-    menuItems.forEach(item => {
-      item.addEventListener('click', closeMenu);
-    });
+  // Add click event listener to each menu item
+  menuItems.forEach(item => {
+    item.addEventListener('click', closeMenu);
   });
+});
 
 
 
@@ -98,3 +98,29 @@ sliderWrapper.addEventListener('mouseover', stopAutoSlide);
 // Resume automatic sliding when leaving the slider
 sliderWrapper.addEventListener('mouseout', startAutoSlide);
 
+
+
+
+// logo Slider
+
+const logoSlides = document.querySelector('.logo-slides');
+const logoSlideItems = document.querySelectorAll('.logo-slide');
+const totalLogoSlides = logoSlideItems.length;
+let currentLogoIndex = 0;
+
+function updateLogoSlider() {
+  logoSlides.style.transform = `translateX(${-currentLogoIndex * 100}%)`;
+}
+
+function nextLogoSlide() {
+  currentLogoIndex = (currentLogoIndex + 1) % totalLogoSlides;
+  updateLogoSlider();
+}
+
+function prevLogoSlide() {
+  currentLogoIndex = (currentLogoIndex - 1 + totalLogoSlides) % totalLogoSlides;
+  updateLogoSlider();
+}
+
+// Optional: Auto slide change
+setInterval(nextLogoSlide, 3000); // Adjust the interval (in milliseconds) as needed

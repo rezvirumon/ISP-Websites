@@ -1,65 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    display: flex;
-    height: 80px;
-    width: 100%;
-  
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+  display: flex;
+  height: 80px;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
 }
 
 
 .logo {
-    background: linear-gradient(45deg, #00e1ff, #06ff61);
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(45deg, #00e1ff, #06ff61);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 nav ul li {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 nav ul li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 0.6px;
-    transition: all 0.3s ease;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #0afbff;
+  color: #0afbff;
 
 }
 
 nav .menu-btn i {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 
@@ -67,43 +68,69 @@ input[type="checkbox"] {
 
 /* Image slider*/
 .slider-container {
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
 
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
-  .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
 
-  #prevBtn, #nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    cursor: pointer;
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
 
-  }
+}
 
-  #prevBtn {
-    left: 10px;
-  }
+#prevBtn {
+  left: 10px;
+}
 
-  #nextBtn {
-    right: 10px;
-  }
+#nextBtn {
+  right: 10px;
+}
 
-    /* Add a class to hide the buttons if needed */
-    .hidden {
-        display: none;
-      }
+/* Add a class to hide the buttons if needed */
+.hidden {
+  display: none;
+}
 
 
 
-    
+/* Logo Slider */
+
+/* Add your existing styles here */
+
+.logo-slider-container {
+  overflow: hidden;
+  position: relative;
+
+  margin: auto;
+}
+
+.logo-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.logo-slide img {
+  max-width: 100%;
+  height: auto;
+}
