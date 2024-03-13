@@ -106,31 +106,3 @@ input[type="checkbox"] {
   display: none;
 }
 
-
-
-/* Logo Slider */
-
-/* Add your existing styles here */
-
-.logo-slider-container {
-  overflow: hidden;
-  position: relative;
-
-  margin: auto;
-}
-
-.logo-slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.logo-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.logo-slide img {
-  max-width: 100%;
-  height: auto;
-}

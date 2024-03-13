@@ -1,0 +1,54 @@
+ /* Valuable Partners*/
+ .client-section {
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 60px;
+
+}
+
+.client-carousel {
+    width: 80%;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.client-item {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background: none;
+    text-align: center;
+
+}
+
+
+
+.client-item img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+.client-item img:hover {
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+
+.client-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--main-color);
+}
+
+.client-item p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+
+/* Valuable Partners*/
