@@ -6,3 +6,18 @@
 .header-container{
     background-image: var(--bg-main-color);
 }
+.package{
+    background-image: var(--bg-main-color);
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .package {
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    background-size: 400% 400%;
+    animation: bgAnimation 8s ease-in-out infinite;
+  }
